@@ -1,3 +1,9 @@
+:root {
+    --wine: #9B2242;
+    --white: #fff;
+    --grey: #525252
+}
+
 /* Set base font size for ease of calculation of rems */
 html { 
     font-size: 62.5%; 
@@ -11,12 +17,12 @@ html {
     border: none;
 }
 
-.heading {
-    margin-left: 50px;
+body {
+    font-size: 1.6rem;
 }
 
 .bg-color-name-title {
-    background-color: #676767;
+    background-color: var(--wine);
     text-align: center;
 }
 
@@ -35,4 +41,80 @@ html {
     margin-top: 20px;
     margin-bottom: 90px;
     color: #fff;
+}
+
+footer {
+    background-color: var(--wine);
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    color: #fff;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    font-size: 13px;
+    line-height: 7px;
+    background-color: #8f8f8f;
+    color: #fafafa;
+    border-radius: 50%;
+    text-align: center;
+    transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    -web-kit-transition: all .35s ease-in-out;
+    -o-transition: all .35s ease-in-out;
+}
+
+.section-heading {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.project-entry {
+    margin-bottom: 1rem;
+    list-style-type: none;
+    font-size: 2rem;
+}
+
+.project-entry a {
+    color: var(--grey);
+    text-decoration: none;
+    font-size: 1.75rem;
+}
+
+.project-entry a:hover {
+    color: var(--wine);
+    text-decoration: none;
+
+}
+
+.previous {
+    color: var(--grey);
+    font-size: 1.75rem;
+}
+
+.previous a {
+    color: var(--wine);
+    font-size: 1.75rem;
+}
+
+.me-entry {
+    margin-bottom: 1rem;
+    list-style-type: none;
+    font-size: 1.75rem;
+}
+
+.bg-light-grey {
+    background-color: #e2dadb;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .main-section {
+        height: 70vh;
+    }
 }
